@@ -21,10 +21,11 @@
 using ::aidl::android::hardware::power::Mode;
 
 namespace aidl {
-namespace android {
+namespace google {
 namespace hardware {
 namespace power {
 namespace impl {
+namespace pixel {
 
 bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
     switch (type) {
@@ -49,8 +50,9 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
     }
 }
 
+}  // namespace pixel
 }  // namespace impl
 }  // namespace power
 }  // namespace hardware
-}  // namespace android
+}  // namespace google
 }  // namespace aidl
