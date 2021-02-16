@@ -480,7 +480,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/sony \
-    hardware/google \
+    hardware/google/pixel \
     hardware/google/interfaces
 
 # Speed profile services and wifi-service to reduce RAM and storage
