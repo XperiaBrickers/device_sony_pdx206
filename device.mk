@@ -481,7 +481,7 @@ PRODUCT_PACKAGES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service.sonykona
+    android.hardware.usb@1.3-service.sonykona
 
 # Sensors
 PRODUCT_PACKAGES += \
