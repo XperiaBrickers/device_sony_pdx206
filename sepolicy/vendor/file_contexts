@@ -83,3 +83,5 @@
 # Dolby - Data Access
 /data/vendor/dolby(/.*)?                                                                                      u:object_r:vendor_data_file:s0
 
+# NFC devices
+/dev/pn553                                                u:object_r:nfc_device:s0
