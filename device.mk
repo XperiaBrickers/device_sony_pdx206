@@ -481,7 +481,8 @@ PRODUCT_PACKAGES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service.sonykona
+    android.hardware.usb-service.sonykona \
+    android.hardware.usb.gadget-service.sonykona
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -534,13 +535,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/usb/etc
 
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
