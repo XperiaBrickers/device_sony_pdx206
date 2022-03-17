@@ -16,6 +16,14 @@
   -->
 
 <resources>
-    <item name="fingerprint_sensor_location_fraction_x" type="fraction">100%</item>
-    <item name="fingerprint_sensor_location_fraction_y" type="fraction">31%</item>
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0" translatable="false">
+        <item>1070</item> <!--item>sensorLocationY</item-->
+    </array>
 </resources>
