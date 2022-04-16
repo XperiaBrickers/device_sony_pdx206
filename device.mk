@@ -208,6 +208,7 @@ PRODUCT_PACKAGES += \
     init_thermal.sh \
     init.class_main.sh \
     init.crda.sh \
+    init.gadgethal.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
@@ -228,6 +229,7 @@ PRODUCT_PACKAGES += \
     init.qti.qcv.sh \
     qca6234-service.sh \
     init.recovery.qcom.rc \
+    init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \
     fstab.qcom \
@@ -476,6 +478,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     extphonelib \
     extphonelib.xml
+
+# USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.2-service.sonykona
 
 # Sensors
 PRODUCT_PACKAGES += \
