@@ -129,6 +129,14 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.options=::v2
 
+# ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+
 # Dalvik
 dalvik.vm.heapstartsize=8m
 dalvik.vm.heapgrowthlimit=192m
