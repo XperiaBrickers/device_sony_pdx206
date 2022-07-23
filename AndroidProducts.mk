@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2019 The corvusOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pdx206.mk
+    $(LOCAL_DIR)/corvus_pdx206.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_pdx206-user \
-    lineage_pdx206-userdebug \
-    lineage_pdx206-eng
+    corvus_pdx206-user \
+    corvus_pdx206-userdebug \
+    corvus_pdx206-eng
