@@ -78,6 +78,9 @@ function blob_fixup() {
     vendor/bin/vendor.somc.camera.*.so)
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
         ;;
+    vendor/etc/init/vendor.dolby.hardware.dms@2.0-service)
+            "${PATCHELF}" --add-needed "lib-dolbyshim.so" "${2}"
+        ;;
     esac
 }
 

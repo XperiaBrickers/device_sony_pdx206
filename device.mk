@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Shims
+PRODUCT_PACKAGES += \
+    lib-dolbyshim
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5.vendor \
