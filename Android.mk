@@ -16,10 +16,10 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter pdx203 pdx206,$(TARGET_DEVICE)),)
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-include $(CLEAR_VARS)
+ifneq ($(filter pdx206,$(TARGET_DEVICE)),)
+  subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
+  $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
+endif
 
 # A/B builds require us to create the mount points at compile time.
 # Just creating it for all cases since it does not hurt.
