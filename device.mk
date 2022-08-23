@@ -518,6 +518,11 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 # NXP NFC
 $(call inherit-product, vendor/nxp/nfc/nfc-vendor-product.mk)
 
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
