@@ -5,7 +5,7 @@
 //
 
 android_app {
-    name: "XiaomiParts",
+    name: "SonySwitcher",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],

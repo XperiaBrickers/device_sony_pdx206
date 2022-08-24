@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package com.sony.switcher;
 
 import android.content.Context;
 import android.provider.Settings;
