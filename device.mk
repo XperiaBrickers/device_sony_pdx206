@@ -551,3 +551,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Set fdsan to the warn_once severity level
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.fdsan=warn_once
