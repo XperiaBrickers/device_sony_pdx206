@@ -48,7 +48,13 @@
         <library name="znrwrapper" path="libznrwrapper.so"/>
         <library name="dnnr" path="libdnnrwrapper.so"/>
         <!--DOLBY DAP-->
-        <library name="dap" path="libswdap.so"/>
+        <library name="dap" path="libhwdap.so"/>
+        <!--DOLBY END-->
+        <!--DOLBY GAME-->
+        <library name="gamedap" path="libswgamedap.so"/>
+        <!--DOLBY END-->
+        <!--DOLBY VQE-->
+        <library name="vqe" path="libswvqe.so"/>
         <!--DOLBY END-->
     </libraries>
     <effects>
@@ -74,6 +80,12 @@
         <effect name="DNNR" library="dnnr" uuid="fa3cce18-254f-4573-bcec-6bd279476034"/>
         <!--DOLBY DAP-->
         <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
+        <!--DOLBY END-->
+        <!--DOLBY GAME-->
+        <effect name="gamedap" library="gamedap" uuid="3783c334-d3a0-4d13-874f-0032e5fb80e2"/>
+        <!--DOLBY END-->
+        <!--DOLBY VQE-->
+        <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
         <!--DOLBY END-->
     </effects>
     <postprocess>
