@@ -77,9 +77,6 @@
         <!--DOLBY END-->
     </effects>
     <postprocess>
-        <stream type="music">
-            <apply effect="music_helper"/>
-        </stream>
     </postprocess>
     <preprocess>
         <stream type="voice_communication">
