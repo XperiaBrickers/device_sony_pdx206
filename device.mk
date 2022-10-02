@@ -297,6 +297,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
 		android.hardware.drm-service.clearkey
 
+# Storage
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
