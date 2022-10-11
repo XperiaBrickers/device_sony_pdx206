@@ -1,5 +1,3 @@
 allow platform_app zygote:unix_stream_socket getopt;
 
-# Dolby
-allow platform_app hal_dms_hwservice:hwservice_manager find;
-binder_call(platform_app, hal_dms_default)
+hal_client_domain(platform_app, hal_dms);
