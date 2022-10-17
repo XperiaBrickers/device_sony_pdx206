@@ -200,7 +200,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    lib-dolbyshim
+    lib-dolbyshim \
+    android.hidl.base@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
