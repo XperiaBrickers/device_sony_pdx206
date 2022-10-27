@@ -7,3 +7,6 @@ vendor.fingerprint.hwid                 u:object_r:vendor_fingerprint_hwid_prop:
 
 vendor.camera.sensor.		                u:object_r:vendor_camera_sensor_prop:s0
 
+vendor.libthermal.currentusecase        u:object_r:somc_thermal_prop:s0
+vendor.thermal.camera.kill              u:object_r:somc_thermal_prop:s0
+vendor.thermal.display_brightness_req   u:object_r:somc_thermal_prop:s0
