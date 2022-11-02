@@ -1,7 +1,7 @@
 #!/vendor/bin/sh
 
 MSIM_DEVICES=(
-    xq-at52 xq-at72 # Dual-SIM version
+    xq-as52 xq-as72 # Dual-SIM version
 )
 MSIM_DEVICE=0
 
@@ -13,7 +13,7 @@ for device in "${MSIM_DEVICES[@]}"; do
 done
 
 if [[ "${MSIM_DEVICE}" -eq 1 ]]; then
-    setprop persist.vendor.radio.multisim.config dsds
+    setprop vendor.radio.multisim.config dsds
 else
-    setprop persist.vendor.radio.multisim.config ss
+    setprop vendor.radio.multisim.config ss
 fi

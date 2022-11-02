@@ -97,13 +97,13 @@ PRODUCT_COPY_FILES += \
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
+    FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=ext4 \
+    FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
@@ -200,7 +200,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    lib-dolbyshim
+    android.hidl.base@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -270,7 +270,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.kona \
+    libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
+    libqdMetaData.system \
     libsdmcore \
     libsdmutils \
     memtrack.kona \
@@ -298,7 +301,7 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.4-service.clearkey
+		android.hardware.drm-service.clearkey
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -354,7 +357,7 @@ PRODUCT_COPY_FILES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 #  IPACM
 PRODUCT_PACKAGES += \
@@ -403,7 +406,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor
+    libavservices_minijail_vendor \
+    libmm-omxcore \
+    libc2dcolorconvert \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 # Light
 PRODUCT_PACKAGES += \
@@ -561,8 +568,8 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    android.hardware.wifi.supplicant \
-    android.hardware.wifi.hostapd \
+    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
+    vendor.qti.hardware.wifi.supplicant@2.1.vendor \
     WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -579,6 +586,10 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
+
+# Creator Mode
+PRODUCT_PACKAGES += \
+    CreatorMode
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
