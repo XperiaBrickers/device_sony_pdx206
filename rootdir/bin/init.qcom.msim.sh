@@ -1,7 +1,7 @@
 #!/vendor/bin/sh
 
 MSIM_DEVICES=(
-    xq-at52 xq-at72 # Dual-SIM version
+    xq-as52 xq-as72 # Dual-SIM version
 )
 MSIM_DEVICE=0
 
