@@ -585,3 +585,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Set fdsan to the warn_once severity level
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.fdsan=warn_once
+
+# Power Stats
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats
