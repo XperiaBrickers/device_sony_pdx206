@@ -15,6 +15,4 @@ attribute hal_disp;
 attribute hal_disp_client;
 attribute hal_disp_server;
 
-attribute hal_dms;
-attribute hal_dms_client;
-attribute hal_dms_server;
+

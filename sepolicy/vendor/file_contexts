@@ -79,9 +79,6 @@
 /sys/devices/virtual/input/input[0-9]+/tof_get_info       u:object_r:sysfs_camera:s0
 /sys/devices/virtual/input/input[0-9]+/tof_ranging_notify u:object_r:sysfs_camera:s0
 
-# Dolby
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                      u:object_r:hal_dms_default_exec:s0
-
 # Dolby - Data Access
 /data/vendor/dolby(/.*)?                                                                                      u:object_r:vendor_data_file:s0
 
