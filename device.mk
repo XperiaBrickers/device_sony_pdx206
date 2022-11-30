@@ -201,7 +201,8 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    vendor.semc.hardware.charger@1.0.vendor
+    vendor.sony.charger \
+    vendor.sony.charger-service
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -324,7 +325,9 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.1-service \
+    vendor.lineage.health \
+    vendor.lineage.health-service.default
 
 # HDR
 PRODUCT_COPY_FILES += \
