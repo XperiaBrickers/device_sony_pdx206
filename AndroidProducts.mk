@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_pdx206.mk
+    $(LOCAL_DIR)/awaken_pdx206.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_pdx206-user \
-    evolution_pdx206-userdebug \
-    evolution_pdx206-eng
+    awaken_pdx206-user \
+    awaken_pdx206-userdebug \
+    awaken_pdx206-eng
