@@ -1,4 +1,4 @@
-# Stock package version: Sony/XQ-AT52/XQ-AT52:12/58.2.A.4.52/058002A004005204241360111:user/release-keys
+# Stock package version: Sony/XQ-AS72/XQ-AS72:12/58.2.A.10.126/058002A004005204241360111:user/release-keys
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -211,6 +211,36 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 
+# CDSP
+vendor/bin/cdsprpcd
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/libsysmon_cdsp_skel.so
+vendor/lib64/libmdsprpc.so
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib/libsysmon_cdsp_skel.so
+vendor/lib/libmdsprpc.so
+
+# Camera firmware
+vendor/firmware/CAMERA_ICP.elf
+
+# Camera postprocessing
+vendor/lib/libscveCommon.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveObjectSegmentation.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscveObjectSegmentation_stub.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectTracker_stub.so
+
 # Camera
 vendor/lib/hw/camera.qcom.so
 vendor/lib64/hw/camera.qcom.so
@@ -244,8 +274,115 @@ vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcammw_util.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcammw.so
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_5_0x165c1010.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_5_0x165d1010.dat
+vendor/lib64/libSNPE.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/etc/init/vendor.somc.hardware.camera.provider@1.0-service.rc
+vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
+vendor/lib64/vendor.somc.camera.device@3.2-impl.so
+vendor/lib64/vendor.somc.camera.device@3.3-impl.so
+vendor/lib64/vendor.somc.camera.device@3.4-impl.so
+vendor/lib64/vendor.somc.camera.device@3.5-impl.so
+vendor/lib64/libsomc_camerahal.so
+vendor/lib64/libsomc_camerapal.so
+vendor/lib64/libsomc_formatconverter.so
+vendor/lib64/libsomc_cheesesconersc.so
+vendor/lib64/libsomc_cheesescone.so
+vendor/lib64/local_libcamera_metadata.so
+vendor/lib64/libsomc_formatconverterrsc.so
+vendor/lib64/libexcal_system.so
+vendor/lib64/libexcal_core.so
+vendor/lib64/libsomc_chokoballcmn.so
+vendor/lib64/libsomc_chokoballkeymgr.so
+vendor/lib64/libsomc_alfortlpserv.so
+vendor/lib64/libsomc_angelpie_impl.so
+vendor/lib64/libsomc_angelpie.so
+vendor/lib64/libsomc_avan_impl.so
+vendor/lib64/libsomc_avan.so
+vendor/lib64/libsomc_buttercakersc.so
+vendor/lib64/libsomc_buttercake.so
+vendor/lib64/libsomc_cornfrosty.so
+vendor/lib64/libsomc_donutscmnserv.so
+vendor/lib64/libsomc_facewrapper.so
+vendor/lib64/libsomc_flicker.so
+vendor/lib64/libsomc_marblersc.so
+vendor/lib64/libsomc_marble.so
+vendor/lib64/libsomc_milkyrollserv.so
+vendor/lib64/libsomc_parisbrestrsc.so
+vendor/lib64/libsomc_parisbrest.so
+vendor/lib64/libsomc_pdnserv.so
+vendor/lib64/libsomc_pretzchocorsc.so
+vendor/lib64/libsomc_pretzchoco.so
+vendor/lib64/libsomc_raisinclrsc.so
+vendor/lib64/libsomc_raisincl.so
+vendor/lib64/libsomc_raisinrsc.so
+vendor/lib64/libsomc_raisin.so
+vendor/lib64/libsomc_sheera_impl.so
+vendor/lib64/libsomc_sheera.so
+vendor/lib64/libsomc_shortcakersc.so
+vendor/lib64/libsomc_shortcake.so
+vendor/lib64/libsomc_soda_impl.so
+vendor/lib64/libsomc_soda.so
+vendor/lib64/libsomc_spicarsc.so
+vendor/lib64/libsomc_spica.so
+vendor/lib64/libsomc_sumomorsc.so
+vendor/lib64/libsomc_sumomo.so
+vendor/lib64/libsomc_yummyrsc.so
+vendor/lib64/libsomc_yummy.so
+vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so
+vendor/lib64/libc++_shared.so
+vendor/lib64/libsymphony-cpu.so
+vendor/etc/camera/camxoverridesettings.txt
+vendor/lib64/com.qti.feature2.memcpy.so
+vendor/lib64/com.qti.feature2.demux.so
+vendor/lib64/com.qti.feature2.stub.so
+vendor/lib64/com.qti.feature2.fusion.so
+vendor/lib64/com.qti.feature2.hdr.so
+vendor/lib64/com.qti.feature2.qcfa.so
+vendor/lib64/com.qti.feature2.gs.so
+vendor/lib64/com.qti.feature2.serializer.so
+vendor/lib64/com.qti.feature2.generic.so
+vendor/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.rt.so
+vendor/lib64/com.qti.feature2.rawhdr.so
+vendor/lib64/com.qti.feature2.frameselect.so
+vendor/lib64/com.qti.feature2.mfsr.so
+vendor/lib64/com.qti.feature2.swmf.so
+vendor/lib64/libipebpsstriping.so
+vendor/lib64/libsony_animaleye.so
+vendor/lib64/libsony_asr.so
+vendor/lib64/libsony_facestab.so
+vendor/lib64/libsony_fc.so
+vendor/lib64/libsony_fooddetect.so
+vendor/lib64/libsony_naruto.so
+vendor/lib64/libsony_stab.so
+vendor/lib64/libiu456_datapath_processor.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libcdfw.so
+vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libgralloccore.so
+vendor/lib64/libgrallocutils.so
+vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
+vendor/bin/vendor.qti.qspmhal@1.0-service
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
+vendor/lib64/vendor.qti.qspmhal@1.0.so
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16631040.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x16632000.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_2_0x16631040.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_2_0x16632000.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_4_0x16631040.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_4_0x16632000.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_5_0x16631040.dat
+vendor/camera/CERVIN_0_EEPROM_FW_DATA_5_0x16632000.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_1_0x16641040.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_1_0x16642000.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_2_0x16641040.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_2_0x16642000.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_4_0x16641040.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_4_0x16642000.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_5_0x16641040.dat
+vendor/camera/CERVIN_1_EEPROM_FW_DATA_5_0x16642000.dat
 vendor/camera/SEM12BS6/rpmp_ipe_asf30.dat
 vendor/camera/SEM12BS6/rpmb_bps_abf40_disable.dat
 vendor/camera/SEM12BS6/rpmb_ipe_tf20_full.dat
@@ -678,24 +815,15 @@ vendor/camera/CHI08BS1/hal_ctrl_ipe_tf20_full.dat
 vendor/camera/CHI08BS1/raw_conv_platform.dat
 vendor/camera/CHI08BS1/hal_ctrl_ipe_hnr10_disable.dat
 vendor/camera/CHI08BS1/hal_ctrl_ipe_tf20_dc16.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_4_0x165d1010.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_4_0x165c4070.dat
 vendor/camera/default.dat
 vendor/camera/snapshot.dat
 vendor/camera/supported.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_2_0x165c4070.dat
 vendor/camera/file_animal_eye_detector.dat
 vendor/camera/SUNHQCN1/depth_comp.dat
 vendor/camera/SUNHQCN1/dataflow.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_1_0x165d4070.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_2_0x165c1010.dat
 vendor/camera/flash.dat
 vendor/camera/file_face_detector.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_4_0x165c1010.dat
 vendor/camera/streaming.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_5_0x165d4070.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x165c4070.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_4_0x165d4070.dat
 vendor/camera/version.dat
 vendor/camera/SEM12BC1/rpmp_ipe_asf30.dat
 vendor/camera/SEM12BC1/rpmb_bps_abf40_disable.dat
@@ -840,14 +968,9 @@ vendor/camera/SEM12BC1/hal_ctrl_ipe_tf20_full.dat
 vendor/camera/SEM12BC1/raw_conv_platform.dat
 vendor/camera/SEM12BC1/hal_ctrl_ipe_hnr10_disable.dat
 vendor/camera/SEM12BC1/hal_ctrl_ipe_tf20_dc16.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_2_0x165d4070.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_5_0x165c4070.dat
 vendor/camera/file_main_subject_detector.dat
 vendor/camera/file_object_detector.dat
-vendor/camera/CERVIN_0_EEPROM_FW_DATA_1_0x165c1010.dat
 vendor/camera/display_ctrl.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_2_0x165d1010.dat
-vendor/camera/CERVIN_1_EEPROM_FW_DATA_1_0x165d1010.dat
 vendor/camera/SODA_HMN_BN0010-0001
 vendor/lib64/camera/libexcal_raw_dump_plugin.so
 vendor/lib64/camera/com.sony.sensormodule.rose_s5k4h7.bin
@@ -1275,7 +1398,7 @@ vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_9.xml
+vendor/etc/qdcm_calib_data_1.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -1826,6 +1949,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 # Radio
 -system_ext/app/QtiTelephony/QtiTelephony.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+-system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/embms/embms.apk
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
@@ -1846,8 +1970,6 @@ vendor/bin/qti
 vendor/bin/rmt_storage
 vendor/bin/ssgtzd
 vendor/bin/tftp_server
-vendor/bin/nv_updater
-vendor/etc/init/nv_updater.rc
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/ssg/ta_config.json
@@ -2421,8 +2543,5 @@ vendor/etc/wifi/p2p_supplicant_overlay.conf
 odm/etc/init/sony_ext_uim_ctrl.rc
 odm/bin/sony_ext_uim_ctrl
 
-# Thermal configs
-vendor/etc/change.cfg
-
 # Touchscreen firmware
-vendor/firmware/touch_module_id_0x83.img
+vendor/firmware/touch_module_id_0x94.img
