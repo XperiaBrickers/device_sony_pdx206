@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+
+SOMC_PLATFORM := edo
+
+PRODUCT_PLATFORM_SOD := true
+
+
 # GMS
 WITH_GMS := true
 
@@ -304,7 +310,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.1-service.sony
 
 # GPS
 PRODUCT_COPY_FILES += \
